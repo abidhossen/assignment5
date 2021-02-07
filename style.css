@@ -1,0 +1,77 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+h4{
+    color: #252525;
+    padding: 20px;
+    font-size: 25px; 
+}
+h5{
+    text-align: center;
+}
+.head-section{
+    margin-top: 10px;
+}
+.brand-logo img{
+    width: 25%;
+}
+.nav-bar ul li{
+    list-style: none;
+    display: inline-block;
+    float: right;
+    padding: 20px;
+    color: #383838;
+    font-weight: 700;
+}
+#meals{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 40px;
+    
+}
+.meal-info-area{
+    box-shadow:  5px 5px 10px rgb(190, 188, 188);;
+    border-radius: 10px;
+    background-color: #F8F7F5;
+    cursor: pointer;
+    text-align: center; 
+}
+
+.meal-img{
+    width: 100%;
+    height: 30%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.ingredients{
+    margin-bottom: 30px;
+}
+    
+.ingredient-area{
+    width: 400px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgb(190, 188, 188);
+    border-radius: 20px;
+    padding: 20px;
+}
+.ingredient-area img{
+    width:100%;
+}
+
+/* responsive design */
+
+@media (max-width:1000px){
+    #meals{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
+@media(max-width:780px){
+    #meals{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
