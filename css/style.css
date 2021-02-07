@@ -57,11 +57,14 @@ h5{
     box-shadow: 5px 5px 10px rgb(190, 188, 188);
     border-radius: 20px;
     padding: 20px;
+    text-align: center;
 }
 .ingredient-area img{
     width:100%;
 }
-
+.ingredient-area p{
+    margin: 0;
+}
 /* responsive design */
 
 @media (max-width:1000px){

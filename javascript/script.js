@@ -56,22 +56,23 @@ const showIngredients = name => {
         .then(data => ingredientsInfo(data.meals[0]))
 }
 const ingredientsInfo = info => {
+    console.log(info);
     const ingredientDiv = document.getElementById('ingredients-info');
-    
     ingredientDiv.innerHTML = `
         <div class="ingredient-area">
             <img src ="${info.strMealThumb}">
             <h1>${info.strMeal}</h1>
             <h3>${'Ingredients'}</h3>
-            <ul>
-            <li>${info.strIngredient1}</li>
-            <li>${info.strIngredient2}</li>
-            <li>${info.strIngredient3}</li>
-            <li>${info.strIngredient4}</li>
-            <li>${info.strIngredient5}</li>
-            <li>${info.strIngredient6}</li>
-            <li>${info.strIngredient7}</li>
-            </ul>
+                <p>${info.strIngredient1} ${info.strMeasure1}</p>
+                <p>${info.strIngredient2} ${info.strMeasure2}</p>
+                <p>${info.strIngredient3} ${info.strMeasure3}</p>
+                <p>${info.strIngredient4} ${info.strMeasure4}</p>
+                <p>${info.strIngredient5} ${info.strMeasure5}</p>
+                <p>${info.strIngredient6} ${info.strMeasure6}</p>
+                <p>${info.strIngredient7} ${info.strMeasure7}</p>
+                <p>${info.strIngredient8} ${info.strMeasure8}</p>
+                <p>${info.strIngredient9} ${info.strMeasure9}</p>
+                <p>${info.strIngredient10} ${info.strMeasure10}</p>
         </div>
     `
 }
